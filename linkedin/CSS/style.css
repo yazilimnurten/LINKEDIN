@@ -2,6 +2,10 @@
     height: 55px;
     background-color: white;
   }
+  /* Logoya soldan boşluk ayarlayınız. >> navbar-brand classına 2% padding-left ekledim */
+  .navbar-brand{
+    padding-left: 2%;
+  }
   
   input.searche {
     height: 36px;
@@ -10,14 +14,17 @@
     border: 0;
   }
   
+  /* icon ile placeholder text ayırmak için padding-left verdim */
   input.searche::placeholder {
     font-size: 14px;
     color: gray;
     background-image: url(/linkedin/ASSETS/search-solid.svg);
     background-repeat: no-repeat;
     background-size: 7%;
+    padding-left: 20px;
+    padding-right: 100px;
+    
   }
-  
   .body {
     background-color: #f3f2ef;
   }
@@ -61,6 +68,7 @@
     border-radius: 40px;
     height: 45px;
   }
+  /* icon ile placeholder text ayırmak için padding-left verdim */
   input.content::placeholder {
     font-weight: bolder;
     font-size: 14px;
@@ -68,6 +76,7 @@
     background-image: url(/linkedin/ASSETS/edit-regular.svg);
     background-repeat: no-repeat;
     background-size: auto;
+    padding-left: 20px;
   }
   
   div.card {
@@ -121,10 +130,32 @@
     width: 50px;
     height: 50px;
   }
+  /* name kısmı sola yaslamak için margin değiştirdim */
   .posttext {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    margin-left: 8px;
+    margin-left: 0px; 
+  }
+  
+  .container.main-area {
+    margin-top: 100px;
+  }
+  .form-inline {
+    margin-right: 100px;
+  }
+  /* Menülerdeki yazıları ve ikonları ortalayın. */
+  .nav-icon {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .message-box {
+    height: 50px; 
+    width: 300px; 
+    position: -webkit-sticky; 
+    border-radius: 5px; 
+    margin-left: auto; 
+    right: 15px;
   }
